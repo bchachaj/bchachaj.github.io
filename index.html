@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bchachaj</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+</head>
+<style>
+
+:root {
+	--base: black;
+	--accent:teal;
+
+}
+
+
+body, html {
+    background-color: black;
+    position: relative;
+    height:100%;
+}
+
+.what {
+  background: black;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+.center {
+  background: black;
+  color: white; 
+  padding: 20px;
+  
+  position:absolute;
+}
+h1 {
+	margin: 0 auto;
+	font-family: 'Bungee Hairline', cursive;
+	z-index:-99;
+}
+
+.loader {
+    border: 10px solid var(--base); /* Light grey */
+    border-top: 10px solid var(--accent); /* Blue */
+    border-bottom: 10px solid var(--accent); /* Blue */
+    border-radius: 40%;
+    width: 120px;
+    height: 120px;
+    animation: spin 4s linear infinite;
+    z-index:90;
+    position:absolute;
+}
+
+.loadera {
+    border: 10px solid var(--base); /* Light grey */
+    border-top: 10px solid var(--accent); /* Blue */
+    border-bottom: 10px solid var(--accent); /* Blue */
+    border-radius: 30%;
+    width: 180px;
+    height: 180px;
+    animation: spin 3s linear infinite;
+    z-index:90;
+    position:absolute;
+}
+.loaderb {
+    border: 10px solid var(--base); /* Light grey */
+    border-top: 10px solid var(--accent); /* Blue */
+    border-bottom: 10px solid var(--accent); /* Blue */
+    border-radius: 30%;
+    width: 250px;
+    height: 250px;
+    animation: spin 4s linear infinite;
+    z-index:90;
+    position:absolute;
+}
+.loaderc {
+    border: 10px solid var(--base); /* Light grey */
+    border-top: 10px solid var(--accent); /* Blue */
+    border-bottom: 10px solid var(--accent); /* Blue */
+    border-radius: 22%;
+    width: 320px;
+    height: 320px;
+    animation: spin 3s linear infinite;
+    z-index:90;
+    position:absolute;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+</style>
+
+<body>
+    <div class="what">
+        <div class="center">
+        
+            <h1>Ben</h1>
+            
+            </div>
+           <div class="loader"></div>
+           <div class="loadera"></div>
+           <div class="loaderb"></div>
+           <div class="loaderc"></div>
+    </div>
+</body>
+
+</html>
