@@ -10,7 +10,7 @@
 <style>
 
 :root {
-	--base: black;
+	--base: white;
 	--accent:teal;
 
 }
@@ -45,7 +45,7 @@ body, html {
 h1 {
 	margin: 0 auto;
 	font-family: 'Bungee Hairline', cursive;
-	z-index:-99;
+	z-index:100;
 }
 
 .loader {
@@ -99,14 +99,19 @@ h1 {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+a {
+	text-decoration:none;
+	color:white;
+}
+
 
 </style>
 
-<body>
+<body addEventListener=''>
     <div class="what">
         <div class="center">
         
-            <h1>Ben</h1>
+            <h1><a href="http://bchachaj.com">Ben</a></h1>
             
             </div>
            <div class="loader"></div>
@@ -114,6 +119,13 @@ h1 {
            <div class="loaderb"></div>
            <div class="loaderc"></div>
     </div>
+    <script>
+    	window.onClick = function() {
+    		window.open('http://bchachaj.com');
+    	}
+
+
+    </script>
 </body>
 
 </html>
